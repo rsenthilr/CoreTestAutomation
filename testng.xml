@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Application Test Suite">
+	<listeners>
+		<listener
+			class-name="com.core.automation.extentreport.extentlisteners.TestListener"></listener>
+		<!-- <listener class-name="com....ExtentReportListener.AnnotationTransformer"></listener> -->
+	</listeners>
+	<test name="OrangeHRM - Login" parallel="methods" thread-count="1">
+		<packages>
+		<package name="com.auto.tests.web.*"></package>
+		</packages>
+		<classes>
+			<class name="com.auto.tests.web.DemoWebTest"></class>
+		</classes>
+	</test>
+</suite>
