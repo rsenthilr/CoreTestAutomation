@@ -52,7 +52,7 @@ public class Driver {
 						driverDataMobile);
 
 		DriverManager.setDriver(driver);
-		loadURL();
+		//loadURL();
 	}
 
 	public static void quitDriver() {
