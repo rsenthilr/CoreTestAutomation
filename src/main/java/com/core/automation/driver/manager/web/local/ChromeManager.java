@@ -17,7 +17,7 @@ public final class ChromeManager {
 		  Proxy proxy = new Proxy(); 
 		  proxy.setSslProxy(ConfigFactory.getConfig().proxySettings());
 		  options.setProxy(proxy);
-		
+		  options.addArguments("--remote-allow-origins=*");	
 		  return new ChromeDriver(options);		
 	}
 
