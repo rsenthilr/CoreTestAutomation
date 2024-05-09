@@ -23,7 +23,7 @@
 		<noexception.version>1.9.0</noexception.version>
 		<fixture.factory.version>3.1.0</fixture.factory.version>
 		<reflection.version>0.10.2</reflection.version>
-		<!--<junit.juniper.version>5.9.2</junit.juniper.version>-->
+		<!--<junit.juniper.version>5.9.2</junit.juniper.version>  -->
 		<owner.version>1.0.12</owner.version>
 		<data.supplier.version>2.2.0</data.supplier.version>
 	</properties>
