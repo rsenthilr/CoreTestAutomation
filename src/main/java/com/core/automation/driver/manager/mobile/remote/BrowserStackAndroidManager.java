@@ -19,13 +19,14 @@ public final class BrowserStackAndroidManager {
 		browserstackOptions.put("projectName", "FirstProject");
 		browserstackOptions.put("buildName", "browser-stack-build-1");
 		browserstackOptions.put("sessionName", "FirstTest");
+		browserstackOptions.put("appiumVersion", "1.22.0");
 
 		capabilities.setCapability("bstack:options", browserstackOptions);
 		capabilities.setCapability("platformName", "android");
-		capabilities.setCapability("platformVersion", "9.0");
-		capabilities.setCapability("deviceName", "Google Pixel 3");
-		capabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
-		capabilities.setCapability("automationName", "uiautomator2");
+		capabilities.setCapability("appium:platformVersion", "9.0");
+		capabilities.setCapability("appium:deviceName", "Google Pixel 3");
+		capabilities.setCapability("appium:app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
+		capabilities.setCapability("appium:automationName", "uiautomator2");
 
 		return new RemoteWebDriver(BrowserStackConfigFactory.getConfig().browserStackURL(), capabilities);
 
