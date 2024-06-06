@@ -1,7 +1,6 @@
 package com.core.automation.config;
 
 import java.net.URL;
-import java.time.Duration;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.LoadPolicy;
@@ -9,7 +8,7 @@ import org.aeonbits.owner.Config.LoadType;
 import org.aeonbits.owner.Config.Sources;
 
 import com.core.automation.config.converters.ConvertStringToBrowserType;
-import com.core.automation.config.converters.ConvertStringToDurationType;
+import com.core.automation.config.converters.ConvertStringToLongType;
 import com.core.automation.config.converters.ConvertStringToMobileRemoteModeType;
 import com.core.automation.config.converters.ConvertStringToMobileRunModeType;
 import com.core.automation.config.converters.ConvertStringToRemoteModeType;
@@ -34,13 +33,13 @@ public interface FrameworkConfig extends Config {
 	
 	@DefaultValue("10")
 	@Key("ExplicitWait")
-	@ConverterClass(ConvertStringToDurationType.class)
-	Duration explicitwait();
+	@ConverterClass(ConvertStringToLongType.class)
+	Long explicitwait();
 	
 	@DefaultValue("10")
 	@Key("PageLoadTimeOuts")
-	@ConverterClass(ConvertStringToDurationType.class)
-	Duration pageloadtimeouts();
+	@ConverterClass(ConvertStringToLongType.class)
+	Long pageloadtimeouts();
 	
 	@Key("Proxy")
 	String proxySettings();
